@@ -2,7 +2,6 @@ package bug_1;
 
 public enum CustomEnum {
     //PLEASE uncomment
-
     ACTION_ONE(5) {
         public int f(){
             return this.i;
@@ -19,7 +18,7 @@ public enum CustomEnum {
         }
     };
 
-    public int i;
+    int i;
 
     CustomEnum(int i) {
         this.i = i;

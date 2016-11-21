@@ -4,7 +4,5 @@ public class StrangeBehavior {
     public static void main(String[] args) {
         new StrangeBehavior();
     }
-
-    private StrangeBehavior strangeBehavior;
 }
 

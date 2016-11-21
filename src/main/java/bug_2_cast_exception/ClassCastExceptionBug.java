@@ -6,8 +6,9 @@ public class ClassCastExceptionBug {
 
     public static void main(String[] args) throws IOException {
 
-        B b = (B) new B();
-        System.out.println(b.a);
+        A b = new B();
+
+        System.out.println(((B)b).a);
 
     }
 }

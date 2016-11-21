@@ -4,9 +4,9 @@ import java.lang.reflect.Method;
 
 public class ReflectionProblem1 {
 
-    public static void main(String[] args) throws IllegalAccessException, InstantiationException {
+    public static void main(String[] args) throws IllegalAccessException, InstantiationException, ClassNotFoundException {
 
-        Class userClass = User.class.getClass();
+        Class userClass = Class.forName(User.class.getName());
 
         Method[] methods = userClass.getMethods();
         for (Method method : methods) {
